@@ -27,7 +27,7 @@ module.exports = {
   output: {
     filename: 'index.js',
     path: path.resolve(__dirname, 'build'),
-    library: 'MyLibrary',
+    library: 'Gasless',
     libraryTarget: 'umd'
   },
   module: {
@@ -38,16 +38,11 @@ module.exports = {
         use: {
           loader: 'babel-loader'
         }
-      },
-      {
-        test: /\.css$/i,
-        use: ['style-loader', 'css-loader'],
-      },
-      {
-        test: /\.(png|jpe?g|gif|svg|eot|ttf|woff|woff2)$/,
-        use: ['url-loader'],
       }
     ]
+  },
+  performance: {
+    hints:false
   },
   plugins: [
     new PrettierPlugin(),

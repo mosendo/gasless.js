@@ -1,7 +1,7 @@
 {
-  "name": "@hodgef/js-library-boilerplate-basic",
-  "version": "1.0.30",
-  "description": "Javascript Minimal Starter Kit for building libraries",
+  "name": "gasless",
+  "version": "1.0.0",
+  "description": "Gasless Dai transfers for browser & Node.js",
   "main": "build/index.js",
   "scripts": {
     "build": "webpack",
@@ -11,18 +11,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/hodgef/js-library-boilerplate-basic"
+    "url": "https://github.com/mosendo/gasless.js"
   },
-  "author": "Francisco Hodge <hello@franciscohodge.com> (https://github.com/hodgef)",
+  "author": "Mosendo (https://github.com/mosendo)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/hodgef/js-library-boilerplate-basic/issues"
+    "url": "https://github.com/mosendo/gasless.js/issues"
   },
-  "homepage": "https://github.com/hodgef/js-library-boilerplate-basic",
+  "homepage": "https://github.com/mosendo/gasless.js",
   "keywords": [
-    "library",
-    "starter",
-    "es6"
+    "dai",
+    "gasless",
+    "library"
   ],
   "devDependencies": {
     "@babel/cli": "^7.7.4",
@@ -32,21 +32,14 @@
     "@babel/preset-env": "^7.7.4",
     "babel-loader": "^8.0.6",
     "babel-preset-minify": "^0.5.0",
-    "css-loader": "^3.2.1",
-    "file-loader": "^5.0.2",
     "jest": "^24.8.0",
     "prettier": "^1.19.1",
     "prettier-webpack-plugin": "^1.2.0",
-    "style-loader": "^1.0.1",
-    "url-loader": "^3.0.0",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.10"
   },
-  "dependencies": {},
-  "jest": {
-    "moduleNameMapper": {
-      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/scripts/testMock.js",
-      "\\.(css|less)$": "<rootDir>/scripts/testMock.js"
-    }
+  "dependencies": {
+    "axios": "^0.19.0",
+    "ethers": "^4.0.40"
   }
 }
