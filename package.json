@@ -1,6 +1,6 @@
 {
   "name": "gasless",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Gasless Dai transfers for browser & Node.js",
   "main": "build/index.js",
   "scripts": {
