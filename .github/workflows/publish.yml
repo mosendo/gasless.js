@@ -21,9 +21,10 @@ jobs:
           git config --local --list
           git checkout master
           git config user.email "$GH_EMAIL"
-          git config user.name "Francisco Hodge"
+          git config user.name "$GH_NAME"
         env:
             GH_EMAIL: ${{secrets.GH_EMAIL}}
+            GH_NAME: ${{secrets.GH_NAME}}
           
       - name: Bump version
         run: |
