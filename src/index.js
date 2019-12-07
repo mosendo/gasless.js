@@ -243,7 +243,7 @@ class Gasless {
         method: "post",
         url: "/getFee",
         data: {
-          type,
+          type:"send",
           gasprice
         }
       });
