@@ -1,6 +1,6 @@
 /*!
  * 
- *   gasless v1.0.2
+ *   gasless v1.0.3
  *   https://github.com/mosendo/gasless.js
  * 
  *   Copyright (c) Mosendo (https://github.com/mosendo)
