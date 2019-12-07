@@ -30,10 +30,11 @@ import Gasless from 'gasless';
     const daiFee = await gasless.getFee(gasPrice);
     const from = window.web3.eth.defaultAccount;
     const txHash = await gasless.send(
-        from,   // Sender address                   (string)
-        to,     // Recipient address                (string)
-        value,  // base unit DAI amount             (string)
-        daiFee  // (Optional) base unit DAI fee.    (string)
+        from,     // Sender address                   (string)
+        to,       // Recipient address                (string)
+        value,    // base unit DAI amount             (string)
+        daiFee    // Base unit DAI fee.               (string)
+        gasPrice  // Tx gas price in Wei.             (string)
     );
 
 })()
